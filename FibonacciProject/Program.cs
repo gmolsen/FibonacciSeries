@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace FibonacciProject {
 	class Program {
 
-		int FibonacciWhile() {
-			int nbr = 1;
-			int fib = 0;
-			while (nbr < 500000000 && fib < 500000000) {
+		long FibonacciWhile() {
+			long nbr = 1;
+			long fib = 0;
+			while (nbr < 1000000000000000000 && fib < 1000000000000000000) {
 				fib += nbr;
 				nbr += fib;
 				Console.WriteLine($"{fib}");
@@ -20,7 +20,7 @@ namespace FibonacciProject {
 		}
 
 		void FibonacciFor() {
-			for (int nbr = 1, fib = 0; nbr < 1000000000 && fib < 1000000000;) {
+			for (long nbr = 1, fib = 0; nbr < 1000000000000000000 && fib < 1000000000000000000;) {
 				fib += nbr;
 				nbr += fib;
 				Console.WriteLine($"{fib}");
